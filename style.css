@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  user-select: none;
+}
+
+header {
+  background-color: #F4F4F4;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 32px;
+}
+
+header nav {
+  display: flex;
+  gap: 56px;
+}
+
+header nav h2 {
+  color: #3C3939;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.banner {
+  background-image: url('./assets/fifa-banner.svg');
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-grupos {
+  display: flex;
+  padding: 80px 32px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 56px;
+  align-self: stretch;
+}
+
+.section-grupos h1 {
+  color: #1F1E1E;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.section-grupos section {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.section-grupos article {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-radius: 6px;
+  background: #F4F4F4;
+  padding: 40px 32px;
+  align-items: flex-start;
+  flex: 1 0 0;
+  width: 315px;
+}
+
+.section-grupos article .time {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.section-grupos article .time img {
+  width: 40px;
+  height: 30px;
+}
+
+.section-grupos article h2 {
+  color: #1F1E1E;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.section-grupos article p {
+  color: #3C3939;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.section-grupos .pagination {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.section-pjogos {
+  display: flex;
+  height: auto;
+  width: 100%;
+  background: #FFF;
+  border-top: 1px solid rgba(31, 30, 30, 0.20);
+  justify-content: center;
+  padding: 80px;
+}
+
+.section-pjogos .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-pjogos .container h1:nth-child(0){
+  color: #1F1E1E;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.section-pjogos .container .jogo-detalhe {
+  display: flex;
+  margin-top: 56px;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-pjogos .container .jogo-detalhe article {
+  display: flex;  
+  padding: 32px;
+  align-items: flex-start;
+  align-self: stretch;
+  justify-content: space-between;
+
+  width: 900px;
+  border-radius: 6px;
+  background: #F4F4F4;
+}
+
+.section-pjogos .container .jogo-detalhe article .p1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.section-pjogos .container .jogo-detalhe article .p2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.section-pjogos .container .jogo-detalhe article .p3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.section-pjogos .container .jogo-detalhe article p {
+  color: #1F1E1E;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  
+}
+
+.section-pjogos .container .jogo-detalhe article h1 {
+  color: #8D1B3D;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.button button {
+  display: flex;
+  width: 312px;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 56px;
+
+  border-radius: 6px;
+  background: #FFF2F6;
+  border: none;
+
+  color: #8D1B3D;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+footer {
+  background: #8D1B3D;
+}
+
+footer .redes {
+  display: flex;
+  justify-content: center;
+  padding: 80px 32px 48px 32px;
+  gap: 56px;
+}
+
+footer .redes-sociais {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 300px;
+}
+
+footer .legais {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 300px;
+}	
+
+footer .fifa {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+footer h1 {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+footer .list ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 16px;
+}
+
+footer .list li {
+  color: #F4F4F4;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  align-self: stretch;
+}
+
+footer .copy {
+  display: flex;
+  justify-content: center;
+  gap: 610px;
+  padding: 30px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
